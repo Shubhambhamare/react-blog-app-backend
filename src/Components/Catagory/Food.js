@@ -6,7 +6,7 @@ function Food() {
   const [content,setContent] = useState([])
 
   useEffect(()=>{
-      axios.get("https://aditykumar-blog-backend.herokuapp.com/api/v1/blogData/details/food")
+      axios.get("https://safe-basin-12852.herokuapp.com/api/v1/blogData/details/food")
       .then((value)=>setContent(value.data))
       .catch(err => {console.log(err)})
 
