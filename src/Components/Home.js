@@ -16,7 +16,7 @@ function Home(props) {
     const topArt=[]
     const featuredArt=[]
     useEffect(()=>{
-        axios.get("https://aditykumar-blog-backend.herokuapp.com/api/v1/blogData/details")
+        axios.get("https://safe-basin-12852.herokuapp.com/api/v1/blogData/details/")
         .then((value)=>setData(value.data))
         .catch(err => {console.log(err)})
     },[])

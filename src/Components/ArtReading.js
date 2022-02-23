@@ -13,7 +13,7 @@ function ArtReading(props) {
     const [data,setData] = useState([])
 
     useEffect(()=>{
-        axios.get(`https://aditykumar-blog-backend.herokuapp.com/api/v1/blogData/details/category/?id=${id}`)
+        axios.get(`https://safe-basin-12852.herokuapp.com//api/v1/blogData/details/category/?id=${id}`)
         .then((value)=>setData(value.data))
         .catch(err => {console.log(err)})
 
